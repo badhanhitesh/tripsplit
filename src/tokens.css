@@ -1,0 +1,33 @@
+/* Layout idea: one calm column of rounded cards on off-white; money figures set large in the display face, green when owed to you, red when you owe. */
+:root {
+  color-scheme: light;
+  --bg: #F4F3EC;        /* off-white */
+  --surface: #FDFCF8;
+  --ink: #23282A;       /* dark charcoal */
+  --muted: #5F6863;
+  --line: #DDDFD3;
+  --mint: #DCEEDB;      /* light green */
+  --mint-deep: #BEE0C0;
+  --btn: #23282A;
+  --btn-ink: #F4F3EC;
+  --pos: #1A6E3D; --pos-bg: #DBF0DE;
+  --neg: #B3362D; --neg-bg: #FAE2DE;
+  --zero: #666D68; --zero-bg: #E9EAE2;
+  --focus: #2E8B57;
+  --font-display: "Anek Latin", "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #1B1F20; --surface: #252A2B; --ink: #ECEEE7; --muted: #A3ABA5; --line: #383E3D;
+    --mint: #2B4635; --mint-deep: #3A5F47; --btn: #CFE9CF; --btn-ink: #1B1F20;
+    --pos: #8ADBA4; --pos-bg: #203A2A; --neg: #F39A90; --neg-bg: #452A29; --zero: #A3ABA5; --zero-bg: #2F3534; --focus: #8ADBA4;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1B1F20; --surface: #252A2B; --ink: #ECEEE7; --muted: #A3ABA5; --line: #383E3D;
+  --mint: #2B4635; --mint-deep: #3A5F47; --btn: #CFE9CF; --btn-ink: #1B1F20;
+  --pos: #8ADBA4; --pos-bg: #203A2A; --neg: #F39A90; --neg-bg: #452A29; --zero: #A3ABA5; --zero-bg: #2F3534; --focus: #8ADBA4;
+}
